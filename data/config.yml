@@ -13,12 +13,12 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 
-code_gold: '<img  src="/assets/images/code-gold.png" width="15px" align="center"/>'
-code_silver: '<img  src="/assets/images/code-silver.png" width="15px" align="center"/>'
-code_bronze: '<img  src="/assets/images/code-bronze.png" width="15px" align="center"/>'
-description_gold: '<img  src="/assets/images/description-gold.png" width="15px" align="center"/>'
-description_silver: '<img  src="/assets/images/description-silver.png" width="15px" align="center"/>'
-description_bronze: '<img  src="/assets/images/description-bronze.png" width="15px" align="center"/>'
-kernel_gold: '<img  src="/assets/images/kernel-gold.png" width="15px"/>'
-kernel_silver: '<img  src="/assets/images/kernel-silver.png" width="15px"/>'
-kernel_bronze: '<img  src="/assets/images/kernel-bronze.png" width="15px"/>'
+code_gold: '<img  src="assets/images/code-gold.png" width="15px" align="center"/>'
+code_silver: '<img  src="assets/images/code-silver.png" width="15px" align="center"/>'
+code_bronze: '<img  src="assets/images/code-bronze.png" width="15px" align="center"/>'
+description_gold: '<img  src="assets/images/description-gold.png" width="15px" align="center"/>'
+description_silver: '<img  src="assets/images/description-silver.png" width="15px" align="center"/>'
+description_bronze: '<img  src="assets/images/description-bronze.png" width="15px" align="center"/>'
+kernel_gold: '<img  src="assets/images/kernel-gold.png" width="15px"/>'
+kernel_silver: '<img  src="assets/images/kernel-silver.png" width="15px"/>'
+kernel_bronze: '<img  src="assets/images/kernel-bronze.png" width="15px"/>'
