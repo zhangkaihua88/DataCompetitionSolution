@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="app">
+
+<head>
+    <title>比赛总结</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/tablesort.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="assets/js/angular-tablesort.js"></script>
+    <script src="assets/js/js-yaml.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+
+</head>
+
+<body ng-controller="MainController">
+    <header class="site-header">
+        <div class="title-wrap">
+            <a class="site-title" href="https://github.com/zhangkaihua88/DataCompetitionSolution/">
+                <div class="site-title"><strong>竞赛</strong>方案总结</div>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div style="margin-left:auto; margin-right:auto; float:center; width:75%;">
+                <section id="content" class="body">
+                    <div class="entry-content"
+                        style="font-size:14px; font-family:'Roboto', sans-serif; line-height:1.7">
+                        <h2 style="text-align:center;">Warning: 项目正在构建中 </h2>
+                        <p>
+                            如果项目有用的话，欢迎给个star，谢谢！
+                        <p style="text-align: center;">
+                            <!-- <img src="https://img.shields.io/github/stars/zhangkaihua88/DataCompetitionSolution?style=social"
+                                alt="star">
+                            <img src="https://img.shields.io/github/forks/zhangkaihua88/DataCompetitionSolution?style=social"
+                                alt="fork"> -->
+                            <iframe src="https://ghbtns.com/github-btn.html?user=zhangkaihua88&amp;repo=DataCompetitionSolution&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="110px" height="30px"></iframe>
+                            <iframe src="https://ghbtns.com/github-btn.html?user=zhangkaihua88&amp;repo=DataCompetitionSolution&amp;type=fork&amp;count=true" frameborder="0" scrolling="0" width="110px" height="30px"></iframe>
+                        </p>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="search-demo-container">
+        <form class="form-inline">
+            <div class="form-group">
+                <input ng-model="searchText" id="myInput" class="form-control" id="search" placeholder="Search">
+            </div>
+        </form>
+    </div>
+    <div class="container published">
+        <span style="float: right; ">
+            <i class="far fa-calendar-alt" style="font-size:16px"></i><time datetime="2019-01-01"> <b>Last Updated:</b> {{site.last_updated}}</time>
+        </span>
+    </div>
+    
+
+    <div class="container row entry-content">
+        <table class="table table-striped" ts-wrapper>
+            <thead>
+                <tr>
+                    <!-- <th></th> -->
+                    <th>题目&描述</th>
+                    <th>详细信息</th>
+                    <th>解决方案</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="competition in competitions | multiFilter:searchText" ts-repeat>
+                    <!-- <td>
+                    <a target="_blank" ng-href="https://www.kaggle.com{{competition.competitionUrl}}">
+                        <img ng-src="{{competition.thumbnailImageUrl}}" alt="Logo" width="100"/>
+                    </a>
+                </td> -->
+                    <td class="td-title" style="max-width: 35%;">
+                        <h4><a target="_blank" ng-href="{{competition.link}}">{{competition.number}}. {{competition.title}}</a></h4>
+                        <!-- <br/> -->
+                        <p>{{competition.desc}}</p>
+                    </td>
+                    <td class="td-details">
+                        <ul style="padding-right: 0;">
+                            <li><b>Team</b>: {{competition.team}}</li>
+                            <li><b>Kind</b>: <span ng-repeat="type in competition.types">{{type}}{{$last ? '' : ','}}</span></li>
+                            <li><b>Metric</b>: {{competition.metric}}</li>
+                            <li><b>Year</b>: {{competition.year}}</li>
+                        </ul>
+                    </td>
+                    <td class="td-solutions">
+
+
+                        <ul style="list-style: none;">
+                            <li class="secondary" ng-if="competition.done==false">
+                                <i class="fas fa-info-circle" style="font-size:15px"></i>Not Available!
+                            </li>
+
+                            <li class="secondary" ng-repeat="solution in competition.solutions" >
+                                <div style="display: inline;" ng-if="solution.rank==1&&solution.kind=='code'" ng-bind-html="site.code_gold | trustHtml"></div>
+                                <div style="display: inline;" ng-if="solution.rank==2&&solution.kind=='code'" ng-bind-html="site.code_silver | trustHtml"></div>
+                                <div style="display: inline;" ng-if="solution.rank==3&&solution.kind=='code'" ng-bind-html="site.code_bronze | trustHtml"></div>
+                                <div style="display: inline;" ng-if="[1,2,3].indexOf(solution.rank)==-1&&solution.kind=='code'" ng-bind-html="site.code_bronze | trustHtml"></div>
+
+                                <div style="display: inline;" ng-if="solution.rank==1&&solution.kind=='description'" ng-bind-html="site.description_gold | trustHtml"></div>
+                                <div style="display: inline;" ng-if="solution.rank==2&&solution.kind=='description'" ng-bind-html="site.description_silver | trustHtml"></div>
+                                <div style="display: inline;" ng-if="solution.rank==3&&solution.kind=='description'" ng-bind-html="site.description_bronze | trustHtml"></div>
+                                <div style="display: inline;" ng-if="[1,2,3].indexOf(solution.rank)==-1&&solution.kind=='description'" ng-bind-html="site.description_bronze | trustHtml"></div>
+
+                                <a href="{{solution.link}}" ng-if="solution.rank%10==1">{{solution.rank}}st place</a>
+                                <a href="{{solution.link}}" ng-if="solution.rank%10==2">{{solution.rank}}nd place</a>
+                                <a href="{{solution.link}}" ng-if="solution.rank%10==3">{{solution.rank}}rd place</a>
+                                <a href="{{solution.link}}" ng-if="[1,2,3].indexOf(solution.rank%10)==-1">{{solution.rank}}th place</a>
+
+                            </li>
+                        </ul>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+    <br />
+    <footer class="site-footer ">
+        <div class="container">
+            <div class="row" style="margin-left:auto; margin-right:auto; float:center; width:75%;">
+                <div class="col-lg-12">
+                    <section id="content">
+                        <div class="entry-content">
+                            © 2023-2023 <a href="https://github.com/zhangkaihua88">幻华</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
