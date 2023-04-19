@@ -58,7 +58,7 @@
     <div class="container" id="search-demo-container">
         <form class="form-inline">
             <div class="form-group">
-                <input ng-model="searchText" id="myInput" class="form-control" id="search" placeholder="Search">
+                <input ng-model="searchText" id="myInput" class="form-control" id="search" placeholder="搜索, 使用';'分割关键词">
             </div>
         </form>
     </div>
@@ -97,6 +97,7 @@
                             <li><b>Kind</b>: <span ng-repeat="type in competition.types">{{type}}{{$last ? '' : ','}}</span></li>
                             <li><b>Metric</b>: {{competition.metric}}</li>
                             <li><b>Year</b>: {{competition.year}}</li>
+                            <li ng-if="competition.video"><b><a href="{{competition.video}}">答辩视频</a></b></li>
                         </ul>
                     </td>
                     <td class="td-solutions">

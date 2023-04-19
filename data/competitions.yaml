@@ -1,3 +1,79 @@
+# - number: 0
+#   title: vLoong能源AI挑战赛——异常检测赛
+#   desc: 本赛题旨在更好地检验电池安全问题，促进智慧能源领域技术发展，比赛募集到的优秀异常检测方案，将应用于车辆预警、故障模式识别等多种场景。
+#   types:
+#     - 表格数据
+#     - 分类
+#     - 异常检测
+#     - 时序
+#   team: 101
+#   metric: AUC
+#   link: https://aistudio.baidu.com/aistudio/competition/detail/495/0/introduction
+#   year: 2022
+#   done: true # 是否有解决方法
+#   solutions:
+#     - rank: 2
+#       link: https://github.com/623851394/VLong-
+#       kind: code
+- number: 3
+  title: 水质净化厂工艺控制-曝气量预测
+  desc: 水质净化厂运营过程中，曝气量需根据进出水水质等参数实时进行调节，以保障出水水质达标，而在实际生产过程中，由于影响因素多，目前尚不能对曝气量进行精确控制，希望通过机器学习模型的应用预测曝气量，以指导实际生产。
+  types:
+    - 表格数据
+    - 回归
+    - 时序
+  team: 729
+  metric: RMSE
+  link: https://www.datafountain.cn/competitions/602
+  year: 2022
+  done: true # 是否有解决方法
+  video: http://ssdxweb.waterchina.com/onlive/detail?codeType=invite&id=901115259&from=code&from=code&from=code
+  solutions:
+    - rank: 1
+      link: https://mp.weixin.qq.com/s/-cXOy7lPkHkn7s1HCEmsEw
+      kind: description
+  
+- number: 2
+  title: 居民小区二次供水需求预测
+  desc: 本次赛题主要通过居民小区智能水表总表读数和二次供水泵后流量计历史数据，结合气象、疫情数据等互联网相关数据进行回归、时序建模，以建立该区域居民小区需水预测模型。利用举办方提供的多个居民小区历史用水数据和感知数据，预测特定周期内不同小区每小时需水量，以指导实际供水运行工作。
+  types:
+    - 表格数据
+    - 回归
+    - 时序
+  team: 729
+  metric: Mean squared logarithmic error
+  link: https://www.datafountain.cn/competitions/603
+  year: 2022
+  done: true # 是否有解决方法
+  video: http://ssdxweb.waterchina.com/onlive/detail?codeType=invite&id=901115259&from=code&from=code&from=code
+  solutions:
+    - rank: 1
+      link: https://mp.weixin.qq.com/s/FXVEABFDGN3ni74SYhuYTQ
+      kind: description
+
+- number: 1
+  title: 欺诈风险识别
+  desc: 本赛题旨在运用有效的金融科技和大数据系统，分析涉赌涉诈资金交易新方式，持续优化风险监测模型，通过赛题提供的涉赌涉诈黑名单、白名单及用于训练的相关交易流水数据集，构建涉赌涉诈账户算法识别模型，全面排查存量风险。
+  types:
+    - 表格数据
+    - 分类
+    - 时序
+  team: 1612
+  metric: F1
+  link: https://www.dcic-china.com/competitions/10060
+  year: 2023
+  done: true
+  solutions:
+    - rank: 8
+      link: https://github.com/Uroboros0313/DCIC2023_Fraud_Risk_Detect
+      kind: code
+    - rank: 11
+      link: https://github.com/EdisonLeeeee/DCIC-2023-Solution
+      kind: code
+    - rank: 13
+      link: https://github.com/GoogleLLP/DCIC2023-Fraud-Risk-Identification
+      kind: code
+  
 - number: 0
   title: vLoong能源AI挑战赛——异常检测赛
   desc: 本赛题旨在更好地检验电池安全问题，促进智慧能源领域技术发展，比赛募集到的优秀异常检测方案，将应用于车辆预警、故障模式识别等多种场景。
@@ -12,77 +88,22 @@
   year: 2022
   done: true # 是否有解决方法
   solutions:
-    - rank: 1
-      link: https://itlubber.art/archives/aistudio-vloong-anomaly-detection-top11
-      kind: code
     - rank: 2
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 3
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 10
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 1
-      link: https://itlubber.art/archives/aistudio-vloong-anomaly-detection-top11
+      link: https://github.com/623851394/VLong-
       kind: code
-    - rank: 2
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
     - rank: 3
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 10
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 1
-      link: https://itlubber.art/archives/aistudio-vloong-anomaly-detection-top11
+      link: https://github.com/Shybert-AI/energy_anomaly_detection_top3
       kind: code
-    - rank: 2
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 3
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 10
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 1
-      link: https://itlubber.art/archives/aistudio-vloong-anomaly-detection-top11
+    - rank: 4 
+      link: https://aistudio.baidu.com/aistudio/projectdetail/4914723
       kind: code
-    - rank: 2
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 3
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 10
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-- number: 0
-  title: sdf
-  desc: 本赛题旨在更好地检验电池安全问题，促进智慧能源领域技术发展，比赛募集到的优秀异常检测方案，将应用于车辆预警、故障模式识别等多种场景。
-  types:
-    - 表格数据
-    - 分类
-    - 异常检测
-    - 时序
-  team: 101
-  metric: BUC
-  link: https://aistudio.baidu.com/aistudio/competition/detail/495/0/introduction
-  year: 2022
-  done: true # 是否有解决方法
-  solutions:
-    - rank: 1
-      link: https://itlubber.art/archives/aistudio-vloong-anomaly-detection-top11
+    - rank: 5
+      link: https://github.com/nengwp/vloong-anomaly-detection-top5
       kind: code
-    - rank: 2
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 3
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
-    - rank: 10
-      link: https://mp.weixin.qq.com/s/GhAgG_tfEmf3k4Z3hKh4Aw
-      kind: description
+    - rank: 7
+      link: https://github.com/czstudio/vLoong-competion
+      kind: code
+    - rank: 8
+      link: https://github.com/itlubber/aistudio-vloong-anomaly-detection-top11
+      kind: code
+
