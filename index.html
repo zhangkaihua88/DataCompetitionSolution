@@ -16,7 +16,7 @@
     <script src="assets/js/js-yaml.min.js"></script>
     <script src="assets/js/app.js"></script>
 
-
+    <base target="_blank" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
 
 </head>
@@ -118,11 +118,22 @@
                                 <div style="display: inline;" ng-if="solution.rank==2&&solution.kind=='description'" ng-bind-html="site.description_silver | trustHtml"></div>
                                 <div style="display: inline;" ng-if="solution.rank==3&&solution.kind=='description'" ng-bind-html="site.description_bronze | trustHtml"></div>
                                 <div style="display: inline;" ng-if="[1,2,3].indexOf(solution.rank)==-1&&solution.kind=='description'" ng-bind-html="site.description_bronze | trustHtml"></div>
+                                
+                                <div style="display: inline;" ng-if="solution.rank==1&&solution.kind=='video'" ng-bind-html="site.video_gold | trustHtml"></div>
+                                <div style="display: inline;" ng-if="solution.rank==2&&solution.kind=='video'" ng-bind-html="site.video_silver | trustHtml"></div>
+                                <div style="display: inline;" ng-if="solution.rank==3&&solution.kind=='video'" ng-bind-html="site.video_bronze | trustHtml"></div>
+                                <div style="display: inline;" ng-if="[1,2,3].indexOf(solution.rank)==-1&&solution.kind=='video'" ng-bind-html="site.video_bronze | trustHtml"></div>
 
                                 <a href="{{solution.link}}" ng-if="solution.rank%10==1">{{solution.rank}}st place</a>
                                 <a href="{{solution.link}}" ng-if="solution.rank%10==2">{{solution.rank}}nd place</a>
                                 <a href="{{solution.link}}" ng-if="solution.rank%10==3">{{solution.rank}}rd place</a>
                                 <a href="{{solution.link}}" ng-if="[1,2,3].indexOf(solution.rank%10)==-1">{{solution.rank}}th place</a>
+                                
+                                <div ng-if="solution.video" style="display: inline-block;">
+                                    <p style="display: inline;">, </p>
+                                    <a href="{{solution.video}}">答辩视频</a>
+
+                                </div>
 
                             </li>
                         </ul>

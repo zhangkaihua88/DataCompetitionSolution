@@ -1,4 +1,4 @@
-last_updated: 2023年04月19日
+last_updated: 2023年04月20日
 title: Kaggle Solutions
 description: Kaggle Solutions and Ideas by Farid Rashidi
 baseurl: ''
@@ -22,3 +22,6 @@ description_bronze: '<img  src="assets/images/description-bronze.png" width="15p
 kernel_gold: '<img  src="assets/images/kernel-gold.png" width="15px"/>'
 kernel_silver: '<img  src="assets/images/kernel-silver.png" width="15px"/>'
 kernel_bronze: '<img  src="assets/images/kernel-bronze.png" width="15px"/>'
+video_gold: '<img  src="assets/images/video-gold.svg" width="15px" align="center"/>'
+video_silver: '<img  src="assets/images/video-silver.svg" width="15px" align="center"/>'
+video_bronze: '<img  src="assets/images/video-bronze.svg" width="15px" align="center"/>'
