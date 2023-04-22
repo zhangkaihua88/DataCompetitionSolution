@@ -16,6 +16,24 @@
 #       link: https://github.com/623851394/VLong-
 #       kind: code
 
+- number: 4
+  title: 雪浪云-汽车变速器阀体检测
+  desc: 阀体总成作为变速箱中较为精密的零部件之一，是一个液压控制单元，最终由电控转换为液压，起到推动变速箱进行高低挡换挡的作用。目前已知变速箱若因为不合格的产品流入市场返修成本会是生产成本的二倍以上，因此企业十分重视产品检测合格率。本赛题需要参赛者使用离线工具，根据历史检测结果，利用大数据分析、机器学习等方法正确地检测未知产品是否合格。
+  types:
+    - 表格数据
+    - 时序
+    - 分类
+    - 异常检测
+  team: 95
+  metric: F1
+  link: https://www.xuelangyun.com/#/sign-up-statistics
+  year: 2022
+  done: true
+  solutions:
+    - rank: 7
+      link: https://mp.weixin.qq.com/s/xk82uP3rfWgC9H0ysCD-pA
+      kind: description
+
 - number: 3
   title: 水质净化厂工艺控制-曝气量预测
   desc: 水质净化厂运营过程中，曝气量需根据进出水水质等参数实时进行调节，以保障出水水质达标，而在实际生产过程中，由于影响因素多，目前尚不能对曝气量进行精确控制，希望通过机器学习模型的应用预测曝气量，以指导实际生产。
