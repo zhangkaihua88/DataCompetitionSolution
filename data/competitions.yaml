@@ -17,7 +17,7 @@
 #       kind: code
 
 - number: 4
-  title: 雪浪云-汽车变速器阀体检测
+  title: 汽车变速器阀体检测
   desc: 阀体总成作为变速箱中较为精密的零部件之一，是一个液压控制单元，最终由电控转换为液压，起到推动变速箱进行高低挡换挡的作用。目前已知变速箱若因为不合格的产品流入市场返修成本会是生产成本的二倍以上，因此企业十分重视产品检测合格率。本赛题需要参赛者使用离线工具，根据历史检测结果，利用大数据分析、机器学习等方法正确地检测未知产品是否合格。
   types:
     - 表格数据
@@ -32,6 +32,12 @@
   solutions:
     - rank: 7
       link: https://mp.weixin.qq.com/s/xk82uP3rfWgC9H0ysCD-pA
+      kind: description
+    - rank: 8
+      link: https://uoe9mhgegk.feishu.cn/docx/QrdGdtLuPoka2gxwW4Mc4cZlnmf
+      kind: code
+    - rank: 56
+      link: https://blog.csdn.net/destiny_balabala/article/details/129134509
       kind: description
 
 - number: 3
