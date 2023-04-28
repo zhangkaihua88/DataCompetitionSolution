@@ -11,10 +11,30 @@
 #   link: 
 #   year: 
 #   done: 
+#   video: 
 #   solutions:
 #     - rank: 2
 #       link: https://github.com/623851394/VLong-
 #       kind: code
+
+- number: 5
+  title: 汽车全厂排产优化问题
+  desc: 汽车生产工艺复杂，一辆汽车的制造需要完成冲压、焊装、涂装、总装四大工艺，经过车身车间、涂装车间、总装车间。各车间存在上下游关联关系，每个车间有自己的优化排序目标，需要综合考虑多种复杂的排序规则及工艺约束，制定合理的混流装配排序计划，通过对车身序列进行排序优化，从而保证生产物料消耗的均衡性以及各个生产工位的负荷均匀化等。目前使用进化算法和大多数其他元启发式算法对于该问题进行优化可得到一组满足生产目标的方案。
+  types:
+    - 优化 
+  team: 111
+  metric: HV
+  link: https://www.xuelangyun.com/#/sign-up-algorithm?tab=1
+  year: 2022
+  done: true
+  video: https://pan.baidu.com/s/1DzWAV8InGfhIB8E32q3S4A?pwd=1234
+  solutions:
+    - rank: 1
+      link: https://pan.baidu.com/s/1L2HrU8p0ZL6yYESIHLp8yQ?pwd=data 
+      kind: video
+    - rank: 2
+      link: https://github.com/xuyaojian123/Car-Production-Optimization-Problem
+      kind: code
 
 - number: 4
   title: 汽车变速器阀体检测
@@ -29,7 +49,11 @@
   link: https://www.xuelangyun.com/#/sign-up-statistics
   year: 2022
   done: true
+  video: https://pan.baidu.com/s/1DzWAV8InGfhIB8E32q3S4A?pwd=1234
   solutions:
+    - rank: 1
+      link: https://pan.baidu.com/s/1Zr59BkUBq_oPXM45jtW8ww?pwd=data 
+      kind: video
     - rank: 7
       link: https://mp.weixin.qq.com/s/xk82uP3rfWgC9H0ysCD-pA
       kind: description
