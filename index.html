@@ -131,10 +131,12 @@
                                 
                                 <div ng-if="solution.video" style="display: inline-block;">
                                     <p style="display: inline;">, </p>
-                                    <a href="{{solution.video}}">答辩视频</a>
-
+                                    <a href="{{solution.video}}">视频</a>
                                 </div>
-
+                                <div ng-if="solution.code" style="display: inline-block;">
+                                    <p style="display: inline;">, </p>
+                                    <a href="{{solution.code}}">代码</a>
+                                </div>
                             </li>
                         </ul>
 

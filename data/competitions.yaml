@@ -17,6 +17,43 @@
 #       link: https://github.com/623851394/VLong-
 #       kind: code
 
+- number: 7
+  title: 招商银行2023Fintech 零售客户进取类产品配置发生时点预测
+  desc: 
+  types:
+    - 表格数据
+    - 分类
+    - 回归
+    - 时序
+  team: 未知
+  metric: F2, MAPE
+  link: 
+  year: 2023
+  done: true
+  video: 
+  solutions:
+    - rank: 4
+      link: https://github.com/zhangkaihua88/2023FinTech_CustomerInvestmentPrediction
+      kind: code
+
+- number: 6
+  title: 食品与疾病关系预测算法赛道
+  desc: 本赛道将提供脱敏后的食物与疾病特征，参赛团队根据主办方提供数据，在高度稀疏数据的场景中，进一步挖掘、融合特征并设计模型，以预测食物与疾病的关系。初赛阶段为二分类问题，分类标签分别为 0（无关）、1（存在正面或负面的影响）。复赛截断，在初赛的基础上，增加对食物与疾病相关性评级维度的评估。
+  types:
+    - 表格数据
+    - 分类
+    - 匿名数据
+  team: 602
+  metric: F1, AUC, NDCG
+  link: https://www.heywhale.com/home/competition/63eee2950644cee838881588
+  year: 2023
+  done: true
+  video: 
+  solutions:
+    - rank: 5
+      link: https://www.heywhale.com/mw/project/64549ec32c44d5a9c65e69fc
+      kind: code
+
 - number: 5
   title: 汽车全厂排产优化问题
   desc: 汽车生产工艺复杂，一辆汽车的制造需要完成冲压、焊装、涂装、总装四大工艺，经过车身车间、涂装车间、总装车间。各车间存在上下游关联关系，每个车间有自己的优化排序目标，需要综合考虑多种复杂的排序规则及工艺约束，制定合理的混流装配排序计划，通过对车身序列进行排序优化，从而保证生产物料消耗的均衡性以及各个生产工位的负荷均匀化等。目前使用进化算法和大多数其他元启发式算法对于该问题进行优化可得到一组满足生产目标的方案。
@@ -30,8 +67,10 @@
   video: https://pan.baidu.com/s/1DzWAV8InGfhIB8E32q3S4A?pwd=1234
   solutions:
     - rank: 1
-      link: https://pan.baidu.com/s/1L2HrU8p0ZL6yYESIHLp8yQ?pwd=data 
-      kind: video
+      link: https://mp.weixin.qq.com/s/nORSnpYJp1kcIrdzg8lEDA
+      video: https://pan.baidu.com/s/1L2HrU8p0ZL6yYESIHLp8yQ?pwd=data
+      code: https://github.com/LXlearning/Xuelangyun2022-automobile-production-scheduling-opt-TOP1-solution
+      kind: code
     - rank: 2
       link: https://github.com/xuyaojian123/Car-Production-Optimization-Problem
       kind: code
