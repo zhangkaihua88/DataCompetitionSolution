@@ -17,6 +17,60 @@
 #       link: https://github.com/623851394/VLong-
 #       kind: code
 
+- number: 8
+  title: 生活用纸抗张强度预测
+  desc: 本次赛题的研究对象是生活用纸的质量问题。抗张强度是生活用纸质量的一个重要指标（表征纸张在一定条件所能承受的最大张力），赛题的任务即完成该质量指标的预测，我们期望参加比赛的选手能深入理解造纸的业务流程，结合主办方提供的工艺数据，建立一个能准确量化评估抗张强度的模型。
+  types:
+    - 表格数据
+    - 回归
+    - 时序
+  team: 1184
+  metric: MAPE
+  link: https://www.datafountain.cn/competitions/614
+  year: 2023
+  done: true
+  video: 微信视频号-博依特科技-2023年5月6日直播回放
+  solutions:
+    - rank: 1
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 2
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 3
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 4
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 5
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 6
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 7
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 8
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 9
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 10
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 11
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 12
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+    - rank: 13
+      link: https://pan.baidu.com/s/1toHpoYZ7yGH2vevyv2eHqw?pwd=data 
+      kind: video
+
 - number: 7
   title: 招商银行2023Fintech 零售客户进取类产品配置发生时点预测
   desc: 

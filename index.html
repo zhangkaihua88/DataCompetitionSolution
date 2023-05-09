@@ -97,7 +97,8 @@
                             <li><b>Kind</b>: <span ng-repeat="type in competition.types">{{type}}{{$last ? '' : ','}}</span></li>
                             <li><b>Metric</b>: {{competition.metric}}</li>
                             <li><b>Year</b>: {{competition.year}}</li>
-                            <li ng-if="competition.video"><b><a href="{{competition.video}}">答辩视频</a></b></li>
+                            <li ng-if="competition.video.includes('http')"><b><a href="{{competition.video}}">答辩视频</a></b></li>
+                            <li ng-if="competition.video && !competition.video.includes('http')"><b><a ng-click='showMessage(competition.video)'>答辩视频</a></b></li>
                         </ul>
                     </td>
                     <td class="td-solutions">

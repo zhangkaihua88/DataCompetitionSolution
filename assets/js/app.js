@@ -23,6 +23,11 @@ app
             console.error(error);
         });
 
+
+        $scope.showMessage = function(message) {
+            alert('视频地址: '+message);
+          };
+
     })
     .filter('parseCurrency', function () {
         return function (input) {
