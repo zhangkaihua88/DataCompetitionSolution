@@ -86,6 +86,10 @@
   done: true
   video: 
   solutions:
+    - rank: 3
+      link: https://github.com/zui0711/Z-Lab/blob/main/2023%20FinTech/top3_by_lty.ipynb
+      kind: code
+    
     - rank: 4
       link: https://github.com/zhangkaihua88/2023FinTech_CustomerInvestmentPrediction
       kind: code
