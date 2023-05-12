@@ -87,8 +87,9 @@
   video: 
   solutions:
     - rank: 3
-      link: https://github.com/zui0711/Z-Lab/blob/main/2023%20FinTech/top3_by_lty.ipynb
+      link: https://mp.weixin.qq.com/s/t25bl0SzyqCJ7dKRgKbKhw
       kind: code
+      code: https://github.com/zui0711/Z-Lab/blob/main/2023%20FinTech/top3_by_lty.ipynb
     
     - rank: 4
       link: https://github.com/zhangkaihua88/2023FinTech_CustomerInvestmentPrediction
